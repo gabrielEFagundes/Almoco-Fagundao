@@ -9,7 +9,7 @@ body{
 
 header{
     padding: 25px;
-    background-color: #444444;
+    background-color: #CC0000;
 }
 
 .container{
@@ -41,6 +41,16 @@ header{
     background-image: url("/Imagens/headimage.jpg");
     width: 5000px;
     height: 950px;
+    filter: brightness(50%);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #444444;
+    padding: 50px;
+    margin-top: -30px;
+    color: #fff
 }
 
 /*TERMINAR*/
@@ -50,9 +60,43 @@ header{
 }
 
 #textoSobImagem{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
-    margin: 0;
+    align-self: center;
+    margin-left: 5%;
     display: flex;
-    align-items: center;
-    justify-items: center;
+    flex-direction: column;
+    font-size: 100px;
+    color: #fff;
+}
+
+#textoSobImagem h2{
+    font-size: 75px;
+}
+
+#separador{
+    display: flex;
+    justify-content: space-between;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#principal li{
+    list-style: none;
+}
+
+#video iframe{
+    border: none;
+    padding: 0;
+    width: 460px;
+    height: 260px;
+}
+
+#reserve{
+    margin-top: 50px;
+    text-align: center;
 }

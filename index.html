@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almoço Fagundão</title>
-    <link rel="stylesheet" href="/Style/style.css">
+    <link rel="stylesheet" href="/Style/style.css"> 
 </head>
 <body>
     <header class="container">
@@ -26,65 +26,72 @@
         <img src="/Imagens/headimage.jpg" alt="Almoco no Fagundão" id="imagem">
         <section id="textoSobImagem">
             <h1>Almoço Fagundão</h1>
+            <h2>Os melhores hambúrgueres da cidade.</h2>
         </section>
     </section>
 
     <main>
-        <!-- SIDEBAR -->
-        <section id="sidebar">
-            <section id="video">
-                <iframe src="https://www.youtube.com/embed/mauBY1cz4Vo" allowfullscreen></iframe>
+        <section id="separador">
+            <!-- PRINCIPAL -->
+            <section id="principal">
+                <section>
+                    <h2>Venha fazer seu almoço no Fagundão!</h2>
+                </section>
+                <section id="local">
+                    <h3>Nossa Localização</h3>
+                    <ul>
+                        <li>Av. Atlântica, 1234</li>
+                        <li>Santa Catarina, Joinville - 02412-300</li>
+                    </ul>
+                </section>
+                <section id="feedbacks">
+                    <h3>O que nossos clientes dizem</h3>
+                    <ul>
+                        <li>Daniel</li>
+                        <li><img src="#" alt="stars"></li>
+                        <sub>Os melhores pratos da cidade!</sub>
+                    </ul>
+                    <ul>
+                        <li>Leandro</li>
+                        <li><img src="#" alt="stars"></li>
+                        <sub>O melhor sempre!</sub>
+                    </ul>
+                    <ul>
+                        <li>José</li>
+                        <li><img src="#" alt="stars"></li>
+                        <sub>Os pratos temáticos de Cuba são demais!</sub>
+                    </ul>
+                </section>
             </section>
-            <section>
-                <form action="/Páginas/reserva.html" method="post">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo aqui">
-                    <label for="email">E-Mail</label>
-                    <input type="email" id="email" name="email" placeholder="seunome@email.com">
-                    <label for="data">Data</label>
-                    <input type="date" id="data" name="data" placeholder="dd/mm/aaaa">
-                    <label for="time">Horário</label>
-                    <input type="time" id="time" name="time" placeholder="--:--">
-                    <label for="qtdPessoas">Número de pessoas</label>
-                    <input type="number" id="qtdPessoas" name="qtdPessoas" placeholder="ex: 10">
-                    <label for="obs">Observações</label>
-                    <input type="text" id="obs" name="obs" placeholder="Descrição aqui...">
-                    <input type="submit" value="Reservar">
-                </form>
-            </section>
-        </section>
 
-        <!-- PRINCIPAL -->
-        <section>
-            <h1>Almoço Fagundão</h1>
-            <h2>Venha fazer seu almoço no Fagundão!</h2>
+            <!-- SIDEBAR -->
+            <section class="sidebar">
+                <section id="video">
+                    <iframe src="https://www.youtube.com/embed/mauBY1cz4Vo" allowfullscreen></iframe>
+                </section>
+                <section>
+                    <section id="reserve">
+                        <h3>Faça sua reserva!</h3>
+                    </section>
+                    <form action="/Páginas/reserva.html" method="post" class="sidebar">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo aqui">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" placeholder="seunome@email.com">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" placeholder="dd/mm/aaaa">
+                        <label for="time">Horário</label>
+                        <input type="time" id="time" name="time" placeholder="--:--">
+                        <label for="qtdPessoas">Número de pessoas</label>
+                        <input type="number" id="qtdPessoas" name="qtdPessoas" placeholder="ex: 10">
+                        <label for="obs">Observações</label>
+                        <input type="text" id="obs" name="obs" placeholder="Descrição aqui...">
+                        <input type="submit" value="Reservar">
+                    </form>
+                </section>
+            </section>
         </section>
-        <section id="local">
-            <h3>Nossa Localização</h3>
-            <ul>
-                <li>Av. Atlântica, 1234</li>
-                <li>Santa Catarina, Joinville - 02412-300</li>
-            </ul>
-        </section>
-        <section id="feedbacks">
-            <h3>O que nossos clientes dizem</h3>
-            <ul>
-                <li>Daniel</li>
-                <li><img src="#" alt="stars"></li>
-                <sub>Os melhores pratos da cidade!</sub>
-            </ul>
-            <ul>
-                <li>Leandro</li>
-                <li><img src="#" alt="stars"></li>
-                <sub>O melhor sempre!</sub>
-            </ul>
-            <ul>
-                <li>José</li>
-                <li><img src="#" alt="stars"></li>
-                <sub>Os pratos temáticos de Cuba são demais!</sub>
-            </ul>
-        </section>
-    </main>
+        </main>
 
     <footer>
         <div id="logo">Logo</div>
