@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almoço Fagundão</title>
+    <title>Restaurante</title>
     <link rel="stylesheet" href="/Style/style.css"> 
 </head>
 <body>
     <header class="container">
-        <div id="logo">Logo</div>
+        <div class="logo">
+            <a src="/index.html">
+                <img src="/Imagens/logo.png" alt="Le Ehrat">
+            </a>
+            </div>
         <div class="container">
             <nav><ul class="container"> <!--Tenho que ver se isso aqui é uma boa prática-->
                 <li><a href="/index.html">Home</a></li>
@@ -22,20 +26,20 @@
         </div>
     </header>
 
-    <section class="container">
-        <img src="/Imagens/headimage.jpg" alt="Almoco no Fagundão" id="imagem">
-        <section id="textoSobImagem">
-            <h1>Almoço Fagundão</h1>
-            <h2>Os melhores hambúrgueres da cidade.</h2>
-        </section>
-    </section>
-
     <main>
+        <section class="container">
+            <img src="/Imagens/Le Ehrat.jpg" alt="Almoco no Fagundão" id="imagem">
+            <section id="textoSobImagem">
+                <h1>Le Ehrat</h1>
+                <h2>Os melhores cafés da cidade.</h2>
+            </section>
+        </section>
+
         <section id="separador">
             <!-- PRINCIPAL -->
             <section id="principal">
                 <section>
-                    <h2>Venha fazer seu almoço no Fagundão!</h2>
+                    <h2>Le Ehrat: Uma cafeteria temática!</h2>
                 </section>
                 <section id="local">
                     <h3>Nossa Localização</h3>
@@ -66,14 +70,15 @@
 
             <!-- SIDEBAR -->
             <section class="sidebar">
+                <h3 class="sidebar-title">Behind the Scenes</h3>
                 <section id="video">
-                    <iframe src="https://www.youtube.com/embed/mauBY1cz4Vo" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/lAd3LYIZMjs" allowfullscreen></iframe>
                 </section>
                 <section>
-                    <section id="reserve">
+                    <section class="sidebar-title">
                         <h3>Faça sua reserva!</h3>
                     </section>
-                    <form action="/Páginas/reserva.html" method="post" class="sidebar">
+                    <form action="/Páginas/reserva.html" method="post" id="formulario">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Seu nome completo aqui">
                         <label for="email">E-Mail</label>
@@ -127,7 +132,7 @@
             </ul>
         </section>
         <section id="copyright">
-            <p>© Copyright Almoço Fagundão, 2025</p>
+            <p>© Copyright Restaurante, 2025</p>
         </section>
     </footer>
 </body>
