@@ -22,6 +22,11 @@ main::before{
     height: 5px;
 }
 
+footer{
+    background-color: #281100;
+    color: #fff;
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -74,6 +79,8 @@ main::before{
     margin-top: -30px;
     color: #000;
     background-color: #f1e1cc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .sidebar-title{
@@ -88,10 +95,32 @@ main::before{
     border-top-right-radius: 10px;
 }
 
+.sidebar-title h4{
+    background-color: #f1e1cc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 15px;
+}
+
 .logo img{
     width: 75px;
     height: 75px;
     filter: brightness(100%);
+}
+
+.carrosselPratos{
+    display: flex;
+}
+
+.prato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.polaroid-prato{
+    width: 350px;
+    height: 200px;
 }
 
 /*TERMINAR*/
@@ -123,17 +152,65 @@ main::before{
 #principal{
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    margin: 100px;
 }
 
 #principal li{
     list-style: none;
 }
 
+#background{
+    background-color: #bda6894c;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#local{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+#feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #feedbacks{
     display: flex;
-    gap: 50px;
-    flex-direction: column;
+    gap: 30px;
+    flex-direction: row;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#feedbacks ul{
+    flex-direction: row;
+    background-color: #bda689;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#feedbacks-titulo{
+    margin-top: 40px;
+    text-align: center;
 }
 
 #video iframe{
@@ -154,4 +231,48 @@ main::before{
     margin-top: 5px;
     border: none;
     border-radius: 10px;
+}
+
+#copyright{
+    text-align: center;
+    filter: brightness(30%);
+    margin-top: 50px;
+}
+
+#contatos-horarios{
+    display: flex;
+    gap: 75px;
+}
+
+#contatos-horarios p{
+    margin-bottom: 15px;
+}
+
+#contatos-horarios li{
+    padding-bottom: 5px;
+    filter: brightness(50%);
+}
+
+#contatos-horarios sub{
+    filter: brightness(50%);
+}
+
+#margem-footer{
+    margin: auto 50px;
+    padding-top: 20px;
+    align-items: baseline;
+}
+
+#links-rapidos p{
+    margin-bottom: 35px;
+}
+
+#links-rapidos li{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#links-rapidos a{
+    color: #fff;
+    filter: brightness(50%);
 }
