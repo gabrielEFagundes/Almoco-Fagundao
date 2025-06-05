@@ -6,6 +6,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f1e1cc;
+    background-image: url("");
 }
 
 header{
@@ -18,7 +19,6 @@ main::before{
     background-color: #301906;
     display: block;
     width: 100%;
-    margin-top: 5px;
     height: 5px;
 }
 
@@ -33,6 +33,10 @@ hr{
 footer{
     background-color: #281100;
     color: #fff;
+}
+
+strong{
+    font-size: 22px;
 }
 
 .container{
@@ -116,6 +120,25 @@ footer{
     filter: brightness(100%);
 }
 
+.titulo-cardapio{
+    text-align: center;
+    background-color: #bda68983;
+    margin: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.titulo-cardapio::after{
+    content: '';
+    background-color: #30190610;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    height: 3px;
+}
+
 .carrosselPratos{
     display: flex;
     gap: 50px;
@@ -158,11 +181,20 @@ footer{
     padding: 5px;
     border-radius: 10px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .polaroid-prato{
     width: 350px;
     height: 200px;
+}
+
+.botao-verMais{
+    transition: transform 0.3s ease;
+}
+
+.botao-verMais:hover{
+    transform: scale(1.05);
 }
 
 /*TERMINAR*/
@@ -201,16 +233,27 @@ footer{
     list-style: none;
 }
 
+#principalSuperior{
+    display: flex;
+    flex-direction: column;
+    background-color: #bda689;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+    align-content: center;
+}
+
 #background{
     background-color: #bda6894c;
     padding: 100px;
     border-radius: 10px;
 }
 
-#titulo{
+.titulo{
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    margin-top: 30px;
 }
 
 #local{
@@ -264,11 +307,11 @@ footer{
     border-radius: 10px;
 }
 
-#formulario label{
+.formulario label{
     margin-top: 20px;
 }
 
-#formulario input{
+.formulario input{
     padding: 10px;
     margin-top: 5px;
     border: none;
@@ -317,4 +360,56 @@ footer{
 #links-rapidos a{
     color: #fff;
     filter: brightness(50%);
+}
+
+#contatoDireto{
+    display: flex;
+    flex-direction: column;
+    background-color: #bda6899c;
+    margin: 100px 39vw;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#contatoDireto form{
+    margin: 50px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#contatoDireto label{
+    margin-top: 20px;
+}
+
+#contatoDireto input{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#contatoDireto hr{
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#submit{
+    background-color: #281100;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+#background-contato{
+    background-image: url("https://cdn.pixabay.com/photo/2021/04/19/12/54/sunset-6191334_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#centralizar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }

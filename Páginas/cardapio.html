@@ -16,9 +16,9 @@
         <div class="container">
             <nav><ul class="container"> <!--Tenho que ver se isso aqui é uma boa prática-->
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="Páginas/cardapio.html">Cardápio</a></li>
-                <li><a href="Páginas/aboutus.html">About Us</a></li>
-                <li><a href="Páginas/contato.html">Contate-nos</a></li>
+                <li><a href="/Páginas/cardapio.html">Cardápio</a></li>
+                <li><a href="/Páginas/aboutus.html">About Us</a></li>
+                <li><a href="/Páginas/contato.html">Contate-nos</a></li>
             </ul></nav>
             <button>
                 <a href="/Páginas/reserva.html">Reservar Mesa</a>
@@ -27,45 +27,245 @@
     </header>
 
     <main>
-        <section class="carrosselPratos">
-            <section class="prato">
-                <img src="/Imagens/brownie.jpg" alt="Brownie" class="polaroid-prato">
-                <section class="texto-prato">
-                    <p>Nome</p>
-                    <p>Descrição</p>
-                    <p>Preço:</p>
-                    <hr>
-                    <p>R$ 0,00</p>
-                </section>
-                <button>
-                    <a href="Páginas/standBy.html">Ver mais</a>
-                </button>
+        <section>
+            <section class="titulo-cardapio">
+                <h2>Salgados</h2> <!--SALGADOS-->
             </section>
-            <section class="prato">
-                <img src="/Imagens/brownie.jpg" alt="Brownie" class="polaroid-prato">
-                <section class="texto-prato">
-                    <p>Nome</p>
-                    <p>Descrição</p>
-                    <p>Preço:</p>
-                    <hr>
-                    <p>R$ 0,00</p>
+            <section class="carrosselPratos">
+                <section class="prato">
+                    <img src="/Imagens/paoQueijo.jpg" alt="Pão de Queijo" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Pão de Queijo</strong>
+                        <p>Uma tijela com uma dúzia de pão de queijo!</p>
+                        <hr>
+                        <strong>R$ 13,00</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
                 </section>
-                <button>
-                    <a href="Páginas/standBy.html">Ver mais</a>
-                </button>
+                <section class="prato">
+                    <img src="/Imagens/sanduiche.jpg" alt="Sanduíches" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Mini Sanduíches</strong>
+                        <p>Pequenos sanduíches para toda a família!</p>
+                        <hr>
+                        <strong>R$ 22,90</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/empadinha.jpg" alt="Empadas" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Empadas da casa</strong>
+                        <p>Empadas tradicionais da casa!</p>
+                        <hr>
+                        <strong>R$ 6,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
             </section>
-            <section class="prato">
-                <img src="/Imagens/brownie.jpg" alt="Brownie" class="polaroid-prato">
-                <section class="texto-prato">
-                    <p>Nome</p>
-                    <p>Descrição</p>
-                    <p>Preço:</p>
-                    <hr>
-                    <p>R$ 0,00</p>
+            <section class="carrosselPratos">
+                <section class="prato">
+                    <img src="/Imagens/porcaoPasteis.jpg" alt="Porção de pastéis" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Porção de Pastéis</strong>
+                        <p>12 pastéis para a família toda!</p>
+                        <hr>
+                        <strong>R$ 34,90</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
                 </section>
-                <button>
-                    <a href="Páginas/standBy.html">Ver mais</a>
-                </button>
+                <section class="prato">
+                    <img src="/Imagens/porcaoEsfihas.jpg" alt="Porção de esfihas" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Porção de Esfihas</strong>
+                        <p>Várias esfihas para deixar todos felizes!</p>
+                        <hr>
+                        <strong>R$ 32,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/misto.jpg" alt="Misto de salgados" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Misto de Salgados</strong>
+                        <p>Diversos salgados, você escolhe cada um!</p>
+                        <hr>
+                        <strong>R$ 40,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+            </section>
+
+            <section class="titulo-cardapio">
+                <h2>Sobremesas</h2> <!--SOBREMESAS-->
+            </section>
+            <section class="carrosselPratos">
+                <section class="prato">
+                    <img src="/Imagens/brownie.jpg" alt="Brownie" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Brownie</strong>
+                        <p>Um delicioso brownie feito com as melhores...</p>
+                        <hr>
+                        <strong>R$ 15,00</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/cookie.jpg" alt="Cookie" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Cookies</strong>
+                        <p>Que tal cookies quentinhos na sua mesa?</p>
+                        <hr>
+                        <strong>R$ 12,90</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/doceCanela.jpg" alt="Doce de canela" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Doce de Canela</strong>
+                        <p>Rolinhos de canela deliciosos para começar!</p>
+                        <hr>
+                        <strong>R$ 10,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+            </section>
+            <section class="carrosselPratos">
+                <section class="prato">
+                    <img src="/Imagens/cereal.jpg" alt="Cereal com iogurte" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Cereal com Iogurte</strong>
+                        <p>Um cereal com as melhores castanhas!</p>
+                        <hr>
+                        <strong>R$ 25,00</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/torta.jpg" alt="Torta" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Torta Doce</strong>
+                        <p>Uma extraorinária torta para a família!</p>
+                        <hr>
+                        <strong>R$ 32,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/donut.jpg" alt="Rosquinha Doce" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Rosquinha Doce</strong>
+                        <p>Uma (ou várias) rosquinhas deliciosas!</p>
+                        <hr>
+                        <strong>R$ 18,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+            </section>
+
+            <section class="titulo-cardapio">
+                <h2>Bebidas</h2> <!--BEBIDAS-->
+            </section>
+            <section class="carrosselPratos">
+                <section class="prato">
+                    <img src="/Imagens/expresso.jpg" alt="Café expresso" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Café Expresso</strong>
+                        <p>O café expresso mais saboroso de todos!</p>
+                        <hr>
+                        <strong>R$ 15,00</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/cappuccino.jpg" alt="Cappuccino" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Cappuccino</strong>
+                        <p>Um delicioso cappuccino saindo!</p>
+                        <hr>
+                        <strong>R$ 20,00</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/shakeCafe.jpg" alt="Milk Shake de Café" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Shake de Café</strong>
+                        <p>Milk Shake de Café, tradicional do Le Ehrat!</p>
+                        <hr>
+                        <strong>R$ 27,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+            </section>
+            <section class="carrosselPratos">
+                <section class="prato">
+                    <img src="/Imagens/bubbleTea.jpg" alt="Bubble Tea de café" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Bubble Coffee</strong>
+                        <p>Um famoso Bubble Tea, mas de café!</p>
+                        <hr>
+                        <strong>R$ 19,90</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/cafeGelado.jpg" alt="Café Gelato" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Café Gelato</strong>
+                        <p>Tá calor? Um café gelado ajuda!</p>
+                        <hr>
+                        <strong>R$ 23,50</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
+                <section class="prato">
+                    <img src="/Imagens/chocolateQuente.jpg" alt="Chocolate Quente" class="polaroid-prato">
+                    <section class="texto-prato">
+                        <strong>Chocolate Quente</strong>
+                        <p>O melhor para dias frios!</p>
+                        <hr>
+                        <strong>R$ 14,90</strong>
+                    </section>
+                    <button class="botao-verMais">
+                        <a href="#">Ver mais</a>
+                    </button>
+                </section>
             </section>
         </section>
     </main>

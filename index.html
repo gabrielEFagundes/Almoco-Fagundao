@@ -18,9 +18,9 @@
         <div class="container">
             <nav><ul class="container"> <!--Tenho que ver se isso aqui é uma boa prática-->
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="Páginas/cardapio.html">Cardápio</a></li>
-                <li><a href="Páginas/aboutus.html">About Us</a></li>
-                <li><a href="Páginas/contato.html">Contate-nos</a></li>
+                <li><a href="/Páginas/cardapio.html">Cardápio</a></li>
+                <li><a href="/Páginas/aboutus.html">About Us</a></li>
+                <li><a href="/Páginas/contato.html">Contate-nos</a></li>
             </ul></nav>
             <button>
                 <a href="/Páginas/reserva.html">Reservar Mesa</a>
@@ -41,23 +41,25 @@
             <!-- PRINCIPAL -->
                 <section id="principal">
                     <section id="background">
-                        <section id="titulo">
-                            <h2>Le Ehrat: Uma cafeteria temática!</h2>
-                        </section>
-                        <section id="local">
-                            <h3>Nossa Localização</h3>
-                            <ul>
-                                <li>Av. Atlântica, 1234</li>
-                                <li>Santa Catarina, Joinville - 02412-300</li>
-                            </ul>
-                        </section>
-                        <section id="contato">
-                            <h3>Nosso contato</h3>
-                            <ul>
-                                <li>+55 (47) 98831-0123</li>
-                                <li>Disponível das 12:30 - 21:30</li>
-                                <li>Todos os dias!</li>
-                            </ul>
+                        <section id="principalSuperior">
+                            <section class="titulo">
+                                <h2>Le Ehrat: Uma cafeteria temática!</h2>
+                            </section>
+                            <section id="local">
+                                <h3>Nossa Localização</h3>
+                                <ul>
+                                    <li>Av. Atlântica, 1234</li>
+                                    <li>Santa Catarina, Joinville - 02412-300</li>
+                                </ul>
+                            </section>
+                            <section id="contato">
+                                <h3>Nosso contato</h3>
+                                <ul>
+                                    <li>+55 (47) 98831-0123</li>
+                                    <li>Disponível das 12:30 - 21:30</li>
+                                    <li>Todos os dias!</li>
+                                </ul>
+                            </section>
                         </section>
                         <section id="feed">
                             <section id="feedbacks-titulo">
@@ -94,7 +96,7 @@
                     <section class="sidebar-title">
                         <h4>Faça sua reserva!</h4>
                     </section>
-                    <form action="/Páginas/reserva.html" method="post" id="formulario">
+                    <form action="/Páginas/reserva.html" method="post" class="formulario">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" placeholder="Seu nome completo aqui">
                         <label for="email">E-Mail</label>
@@ -107,7 +109,7 @@
                         <input type="number" id="qtdPessoas" name="qtdPessoas" placeholder="ex: 10">
                         <label for="obs">Observações</label>
                         <input type="text" id="obs" name="obs" placeholder="Descrição aqui...">
-                        <input type="submit" value="Reservar">
+                        <input type="submit" value="Reservar" id="submit">
                     </form>
                 </section>
             </section>
